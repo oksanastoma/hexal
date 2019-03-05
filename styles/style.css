@@ -1,9 +1,29 @@
 body, html{
     font-size: 16px;
+    width: 1200px;
 }
 
 header {
-    background: gray;
+    background: #323232;
+    width: auto;
+    height: 63px;
+}
+
+.navigation {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+.point li{
+    color: #343436;
+    width: 2px;
+    height: 2px;
+    border-radius: 20px;
+
 }
 
 .button-submit {
@@ -25,7 +45,7 @@ header {
     text-align: justify;
 }
 
-h3 {
+h1 {
     font-family: 'MavenProRegular', AdobeInvisFont, MyriadPro-Regular;
     font-size: 30pt;
     color: rgba(215, 252, 245, 255);
@@ -52,6 +72,7 @@ h3 {
     font-size: 12pt;
     color: rgba(190, 190, 190, 255);
     text-align: justify;
+    display: block;
 }
 .input-message {
     width: 580px;
@@ -61,18 +82,7 @@ h3 {
 .image{
     width: 200px;
     position: relative;
-    left: 1px;
-    top: 1px;
-}
-
-.image span {
-    width: 200px;
-    margin: 10px;
-    padding: 0 10px;
-    border: 1px solid red;
-    display: inline-block;
-    overflow: hidden;
-    transform: rotate(120)
+    
 }
 
 .hexagon {
@@ -100,7 +110,12 @@ h3 {
     transform: rotate(-60deg);
     overflow: hidden;
     visibility: visible;
-    background-image: url('../assets/images/1.png');
+    background-image: url('../assets/images/man.png');
     background-repeat: no-repeat;
     background-position: 50%;
+}
+.hexagon-1 {
+    padding-left: 91px;
+    padding-top: 50px;
+
 }
