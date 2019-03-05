@@ -15,25 +15,34 @@
         <nav class="navigation">
             <ul class="menu">
                 <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#main">main</a></li>
                 <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#footer">Footer</a></li>
             </ul>
         </nav>
     </header>
         <!-- END HEADER-->
 
         <!--MAIN-->
-    <main>
+    <main id="main">
         <section class="hexagon-conteiner">
-            <div>img</div>
+            <div>
+                <div class="hexagon"><div class="hex-layer-1"><div class="hex-layer-2"></div></div>
+                 </div>
+                 <div class="hexagon"><div class="hex-layer-1"><div class="hex-layer-2"></div></div>
+                </div>
+                <div class="hexagon"><div class="hex-layer-1"><div class="hex-layer-2"></div></div>
+                 </div>                
+             <!--   <span><img class="image" src="assets/images/1.png" alt="1"></span>
+                <span></span><img class="image" src="assets/images/1.png" alt="1"></span> -->
+            </div>
         </section>
         <section class="info">
-            <article>
-                <img src="assets/images/man.png" alt="man">
-                <h3>
-                    <p></p>
-                    <p></p>
+            <article class="article">
+                <img class="image" src="assets/images/man.png" alt="man">
+                <h3>Smith Anderson</h3>
+                    <p class="subtitle">Illustrator & Character Designer</p>
+                    <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
                 </h3>
             </article>
         </section>
@@ -41,7 +50,8 @@
         <!--END MAIN-->
 
         <!--FOOTER-->
-    <footer>
+    <footer id="footer">
+        <div class="footer-submit">
     <form action="#" class="in-touch-form">
         <fieldset>
             <legend>Get In Touch</legend>
@@ -49,10 +59,11 @@
             <input class="input-text" type="text" placeholder="Name (Required)" required>
             <input class="input-email" type="email" placeholder="Email (Required)" required>
             <input class="input-text" type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            <textarea class="input-message"name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
         </fieldset>    
         <button class="button-submit" type="submit">send</button>
     </form>
+</div>
     </footer>
         <!--END FOOTER-->
     
