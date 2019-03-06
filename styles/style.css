@@ -1,12 +1,23 @@
 body, html{
     font-size: 16px;
-    width: 1200px;
+    width: 100%;
 }
 
 header {
     background: #323232;
     width: auto;
     height: 63px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lato-Bold', AdobeInvisFont, MyriadPro-Regular;
+    font-size: 7.21379pt;
+    color: rgba(46, 179, 152, 255);
+    text-align: justify;
+}
+.item {
+    text-transform: uppercase;
 }
 
 .navigation {
@@ -60,6 +71,12 @@ h1 {
 
 .footer-submit{
     background-color: #323232;
+    
+    padding-left: 120px;
+    
+}
+.in-touch-form{
+    padding-top: 67px;
 }
 
 .input-text,
@@ -73,7 +90,23 @@ h1 {
     color: rgba(190, 190, 190, 255);
     text-align: justify;
     display: block;
+    
 }
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+.legend {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30pt;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+}
+
+.p-legend {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18pt;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+}
+
 .input-message {
     width: 580px;
     height: 150px; 
@@ -83,6 +116,10 @@ h1 {
     width: 200px;
     position: relative;
     
+}
+
+.hexagon-conteiner {
+    justify-content: center;
 }
 
 .hexagon {
