@@ -191,3 +191,16 @@ h1 {
     justify-content: center;
     flex-wrap: nowrap;
 }
+
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    padding-left: 39px;
+    font-family: 'MavenProRegular', AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.65655pt;
+    color: rgba(69, 69, 69, 255);
+    text-align: justify;
+    background-color: #222222;
+    width: 981px;
+    height: 43px;
+}
