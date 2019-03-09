@@ -1,6 +1,7 @@
 body, html{
     font-size: 16px;
-    width: 100%;
+    width: 1020px;
+    height: 1506px;
 }
 
 header {
@@ -16,25 +17,19 @@ a {
     color: rgba(46, 179, 152, 255);
     text-align: justify;
 }
-.item {
-    text-transform: uppercase;
-}
 
 .navigation {
-    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-li {
-    display: inline-block;
-    text-align: center;
-}
-
-.point li{
-    color: #343436;
-    width: 2px;
-    height: 2px;
-    border-radius: 20px;
-
+.navigation .menu {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: stretch;
+    padding-left: 10px;
 }
 
 .button-submit {
@@ -42,11 +37,29 @@ li {
 }
 
 .info {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 99px; 
     background-color: #2eb398;
+    width: 921px;
 }
 
 .article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2em;
+}
+
+.article .img {
+    display: flex;
+    align-self: center;
+}
+
+hr {
+    height: 316px; 
+    width: 0.5px;
+    background-color: rgba(32, 129, 109, 255);
 }
 
 .article .subtitle{
@@ -54,6 +67,7 @@ li {
     font-size: 18pt;
     color: rgba(32, 129, 109, 255);
     text-align: justify;
+    width: 249px;
 }
 
 h1 {
@@ -62,16 +76,17 @@ h1 {
     color: rgba(215, 252, 245, 255);
     text-align: justify;
 }
+
 .text-info {
     font-family: 'Lato-Regular', AdobeInvisFont, MyriadPro-Regular;
     font-size: 12pt;
     color: rgba(215, 252, 245, 255);
     text-align: justify;
+    width: 581px;
 }
 
 .footer-submit{
     background-color: #323232;
-    
     padding-left: 120px;
     
 }
@@ -113,23 +128,30 @@ h1 {
 }
 
 .image{
-    width: 200px;
+    width: 182px;
     position: relative;
     
 }
 
-.hexagon-conteiner {
-    justify-content: center;
+.hexagon {
+    width: 182px;
+    height: 209px;
+    margin: 18px;
+    transform: rotate(120deg);
+    overflow: hidden;    
+    visibility: hidden;
+    display: inline-block; 
 }
 
-.hexagon {
+.hexagon-main {
+    display: flex;
+    justify-content: center; 
     width: 182px;
     height: 209px;
     margin: 5px;
     transform: rotate(120deg);
     overflow: hidden;    
     visibility: hidden;
-    display: inline-block;
 }
 
 .hex-layer-1 {
@@ -147,12 +169,25 @@ h1 {
     transform: rotate(-60deg);
     overflow: hidden;
     visibility: visible;
-    background-image: url('../assets/images/man.png');
+    background: #323232;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 .hexagon-1 {
-    padding-left: 91px;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 89px;
+}
 
+.hexagon-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.hexagon-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
