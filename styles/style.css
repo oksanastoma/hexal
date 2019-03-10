@@ -1,6 +1,6 @@
 body, html{
     font-size: 16px;
-    width: 1020px;
+    
     height: 1506px;
 }
 
@@ -8,11 +8,13 @@ header {
     background: #323232;
     width: auto;
     height: 63px;
+    width: 1020px;
 }
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 a {
     text-decoration: none;
-    font-family: 'Lato-Bold', AdobeInvisFont, MyriadPro-Regular;
+    font-family: 'Lato', sans-serif;
     font-size: 7.21379pt;
     color: rgba(46, 179, 152, 255);
     text-align: justify;
@@ -22,6 +24,7 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 4px;
 }
 
 .navigation .menu {
@@ -31,12 +34,17 @@ a {
     justify-content: stretch;
     padding-left: 10px;
 }
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    
+   }
 li:nth-child(2),
 li:nth-child(6) {
     width: 1px;
     height: 1px;
     background: white;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .button-submit {
@@ -94,11 +102,13 @@ h1 {
 
 .footer-submit{
     background-color: #323232;
-    padding-left: 120px;
+    width: 1020px;
+     
     
 }
 .in-touch-form{
     padding-top: 67px;
+    padding-left: 120px;
 }
 
 .input-text,
@@ -134,31 +144,40 @@ h1 {
     height: 150px; 
 }
 
-.image{
-    width: 182px;
-    position: relative;
-    
+
+/*
+.hex-conteiner {
+    width: 100%;
+    height:722px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hexagon {
-    width: 182px;
-    height: 209px;
-    margin: 18px;
-    transform: rotate(120deg);
-    overflow: hidden;    
-    visibility: hidden;
-    display: inline-block; 
-}
-
-.hexagon-main {
-    display: flex;
-    justify-content: center; 
     width: 182px;
     height: 209px;
     margin: 5px;
     transform: rotate(120deg);
     overflow: hidden;    
     visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagon-main {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 182px;
+    height: 209px;
+    transform: rotate(120deg);
+    overflow: hidden;    
+    visibility: hidden;
+    margin-top: -183px;
+    margin-left: 423px;
 }
 
 .hex-layer-1 {
@@ -170,6 +189,9 @@ h1 {
 }
 
 .hex-layer-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background: #ccc3;
@@ -184,20 +206,26 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    padding-top: 89px;
+    padding-top: 45px;
+    padding-left: -3px;
+   
 }
 
 .hexagon-2 {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-top: -100px;
+    width: 980px;
 }
 
 .hexagon-3 {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-}
+    width: 780px;
+    margin-top: -100px;
+} */
 
 .footer-copyright{
     display: flex;
@@ -211,3 +239,362 @@ h1 {
     width: 981px;
     height: 43px;
 }
+
+
+.hexagon-container {
+    position: relative;
+}
+
+.hexagon {
+    width: 182px;
+    height: 209px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hex-layer-1 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #ccc3;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.hex-1 {
+    margin-top: 76px;
+    margin-left: 117px;
+    
+}
+
+.hex-layer-2-1 {
+    background-image: url('../assets/images/1.png');
+}
+
+.hex-2 {
+    margin-top: 76px;
+    margin-left: 15px;
+}
+
+.hex-layer-2-2 {
+    background-image: url('../assets/images/2.png');
+}
+
+.hex-3 {
+    margin-top: 76px;
+    margin-left: 14px;
+}
+
+.hex-layer-2-3 {
+    background-image: url('../assets/images/3.png');
+}
+
+.hex-4 {
+    margin-top: 76px;
+    margin-left: 14px;
+}
+
+.hex-layer-2-4 {
+    background-image: url('../assets/images/4.png');
+}
+
+.hex-5 {
+    margin-top: -44px;
+    margin-left: 17px;
+    
+}
+
+.hex-layer-2-5 {
+    background-image: url('../assets/images/5.png');
+}
+
+.hex-6 {
+    margin-top: -43px;
+    margin-left: 15px;
+    
+}
+
+.hex-layer-2-6 {
+    background-image: url('../assets/images/6.png');
+}
+
+.hex-7 {
+    margin-top: -43px;
+    margin-left: 13px;
+    
+}
+
+.hex-layer-2-7 {
+    background-image: url('../assets/images/7.png');
+}
+
+.hex-8 {
+    margin-top: -43px;
+    margin-left: 15px;
+    
+}
+
+.hex-layer-2-8 {
+    background-image: url('../assets/images/8.png');
+}
+
+.hex-9 {
+    margin-top: -43px;
+    margin-left: 14px;
+    
+}
+
+.hex-layer-2-9 {
+    background-image: url('../assets/images/9.png');
+}
+
+.hex-10 {
+    margin-top: -46px;
+    margin-left: 119px;
+    
+}
+
+.hex-layer-2-10 {
+    background-image: url('../assets/images/10.png');
+}
+
+.hex-11 {
+    margin-top: -46px;
+    margin-left: 13px;
+    
+}
+
+.hex-layer-2-11 {
+    background-image: url('../assets/images/11.png');
+}
+
+.hex-12 {
+    margin-top: -46px;
+    margin-left: 13px; 
+}
+
+.hex-layer-2-12 {
+    background-image: url('../assets/images/12.png');
+}
+
+.hex-13 {
+    margin-top: -46px;
+    margin-left: 16px;   
+}
+
+.hex-layer-2-13 {
+    background-image: url('../assets/images/13.png');
+}
+
+.line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "line-1 line-2";
+}
+
+.line-3,
+.line-4,
+.line-5,
+.line-6 {
+    border: none;
+    background-color: #e4e9eb;
+    color: #e4e9eb;
+    width: 104px;
+    height: 1px;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+.line-1,
+.line-2 {
+    border: none;
+    background-color: #e4e9eb;
+    color: #e4e9eb;
+    width: 410px;
+    height: 1px;
+    margin-top: 11px;
+    position: absolute;
+}
+
+.line-1 {
+    margin-left: 27px;
+    grid-area: line-1;
+}
+
+.line-2 {
+    margin-left: 580px;
+    grid-area: line-2;
+}
+
+.line-3 {
+    margin-left: 47px;
+    margin-top: 180px;
+}
+
+.line-4 {
+    margin-left: 868px;
+    margin-top: -108px;
+}
+
+.line-5 {
+    margin-left: 46px;
+    margin-top: 58px;
+}
+
+.line-6 {
+    margin-left: 868px;
+    margin-top: -110px;
+}
+
+.line-7 {
+    border: none; 
+    background-color: #e4e9eb;
+    color: #e4e9eb;
+    width: 960px;
+    height: 1px; 
+    margin-top: 72px;
+    margin-left: 27px;
+    grid-area: line-1;
+}  
+
+
+.square-1,
+.square-2,
+.square-3,
+.square-4,
+.square-5,
+.square-6 {
+    width: 6px;
+    height: 6px;
+    background: #ddd2c5;
+    position: absolute;
+    margin-top: 54px;
+
+}
+
+.square-1 {
+
+    margin-left: 28px;
+}
+
+.square-2 {
+    margin-left: 38px;
+}
+
+.square-3 {
+    background: #8b8784;
+    margin-left: 47px;
+}
+
+.square-4 {
+    margin-left: 56px;
+}
+
+.square-5 {
+    margin-left: 66px;
+}
+
+.square-6 {
+    margin-left: 75px;
+}
+
+
+
+
+
+
+
+.profile-container {
+
+    height: 341px;
+    width: 1019px;
+    background-color: #2eb398;
+    margin-top: 11px;
+}
+
+
+.profile-container-1 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1.7fr 0.3fr;
+    grid-template-areas: "profile-img profile-info" ". social-networks";
+}
+
+
+
+
+/* style for profile  */
+
+.line-8 {
+
+    border: none;
+    color: #e4e9eb;
+    background-color: #219d84;
+width: 316px;
+height: 1px;
+transform: rotate(-90deg);
+position: absolute;
+margin-left: -59px;
+    margin-top: -105px;
+}
+
+.profile-img { 
+    grid-area: profile-img; 
+    margin-top: -46px;
+    margin-left: 13px;
+    margin-top: 66px;
+    margin-left: 119px;
+
+}
+
+
+.hex-layer-2-pic14 {
+    background-image: url('../assets/images/man1.png');
+   
+}
+
+
+.profile-info { 
+    grid-area: profile-info; 
+    /* font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular; */
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    
+}
+
+
+.profile-info h1 {
+    font-size: 31px;
+    padding-top: 58px;
+
+}
+
+.profile-info h3 {
+    font-size: 18pt;
+color: rgba(32, 129, 109, 255);
+}
+
+.profile-info p {
+    font-family: 'Lato', sans-serif;
+    font-size: 11.9px;
+    color: rgba(215, 252, 245, 255);
+    line-height: 1.98;
+    padding-left: 13px;
+    padding-top: 2px;
+
+}
+
